@@ -1,0 +1,420 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+
+}
+
+
+.viewport-1 {
+
+    width: 100%;
+    background-color: #F2F2F0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('img/apple-clean-containers-205316.jpg');
+
+    height: 100vh;
+
+}
+
+
+.viewport-1 nav {
+    padding-right: 4%;
+    padding-top: 4%;
+    text-align: right;
+}
+
+.viewport-1 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 13px;
+
+
+}
+
+.section-1-text {
+    padding-top: 15%;
+    margin: 0 auto;
+    margin-right: 0.9%;
+
+}
+
+
+
+.section-1-text h1 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.section-1-text h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #426FFF;
+}
+
+.viewport-2 {
+
+
+    background-color: #426FFF;
+    height: 80vh;
+
+}
+
+
+
+.section-2-text {
+
+
+    padding-top: 150px;
+    margin: 0 auto;
+
+
+}
+
+.section-2-text h1 {
+    color: #F2F2F0;
+}
+
+.section-2-text p {
+    color: whitesmoke;
+}
+
+.about-me-title {
+    color: white;
+    padding-top: 100px;
+    margin: 0;
+
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+
+    justify-content: center;
+    justify-content: space-evenly;
+    display: flex;
+
+
+}
+
+.flex {
+    text-align: center;
+    width: 25%;
+
+}
+
+.flex h1 {
+
+    font-size: 50px;
+
+}
+
+.flex p {}
+
+
+/* viewport -3  */
+.viewport-3 {
+
+    background-color: #F2F2F0;
+    height: 70vh;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+}
+
+.section-3-text {
+    padding-top: 100px;
+    margin: 0 auto;
+
+
+}
+
+.section-3-text h1 {
+    color: #426FFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+.card {
+    cursor: pointer;
+    margin-top: 85px;
+    color: #426FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card p {
+    color: black;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: #426FFF;
+
+    font-size: 25px;
+}
+
+.card:hover {
+    background-color: lightgray;
+    transition: 3s;
+}
+
+
+.viewport-4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+    background-color: #1960FF;
+
+    height: 100vh;
+
+
+
+}
+
+.section-4-text {
+    color: whitesmoke;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.section-4-text h1 {
+    text-align: center;
+    font-size: 50px;
+
+
+}
+
+.card-projects {
+    border-radius: 5px;
+    width: 80%;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+}
+
+.card-projects button {
+    padding-top: 20px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 11px;
+
+    color: white;
+    background-color: #426FFF;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+
+}
+
+
+.img-project {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    width: 2250px;
+    height: 259px;
+}
+
+
+
+.test {}
+
+.card-projects a {}
+
+.card-projects h1 {
+    color: #426FFF;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+.viewport-5 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+    background-color: #F2F2F0;
+    height: 30vh;
+
+}
+
+
+.section-5-text {
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+
+.section-5-text h1 {
+    font-size: 50px;
+    color: #426FFF;
+
+
+}
+
+.section-5-text input {
+
+    background-color: #426FFF;
+    border: none;
+    color: white;
+    padding: 19px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* modal */
+
+.modal {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* media queries */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+    .viewport-2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-2-text {
+
+
+        padding-top: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .section-2-text h1 {
+        color: #F2F2F0;
+    }
+
+    .section-2-text p {
+        color: whitesmoke;
+    }
+
+    .about-me-title {
+        color: white;
+        padding-top: 100px;
+        margin: 0;
+
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    .flex h1 {
+        font-size: 20px;
+    }
+
+    .flex p {
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+
+
+
+
+    }
+
+    .flex {
+        flex-grow: 1;
+    }
+
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+       
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+}
