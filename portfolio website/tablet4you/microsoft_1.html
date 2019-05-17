@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Microsoft Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+             <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="logo"><a href="home.html"><img src="home.jpg" alt="" id="logo"></a></li>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li ><a href="#">Producten</a></li>
+                    <li ><a href="#">Over ons</a></li>
+                    <li ><a href="#">Contact</a></li>
+                    <li class="winkelmand" >In Winkelmand: <span id="winkelmand"></span><div><a href="#" class="empty-basket" onclick="clearBasket()">Leeg mand</div></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="broodkruimel"><a href="index.html">Home</a> / Microsoft</div>
+        <main>
+            <content>
+                <h2>Microsoft Tablet</h2>
+            </content>
+            <content >
+                <div class="product-detail">
+                    <img src="img/microsoft.png" alt="Een tablet van het merk Microsoft">
+                    <div class="bestel-tablet">
+                        <span class="Prijs"> 399,-</span> 
+                        <button class="zet-in-winkelmand" onclick="orderProduct()">In winkelmand</button>
+                    </div>
+                </div>
+                
+                <div class="product-description-detail">
+                    <table class="product-table">
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.1 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Windows 10</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>128GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 8 GB</td>
+                        </tr>
+                   
+                    </table>
+                    <div class="product-description">
+                       Ga voor de Microsoft Surface Pro als je niet wil kiezen tussen een laptop en een tablet. 
+                       Wanneer je dit model met de bijbehorende type cover aanschaft, heb je een 2-in-1 voor tekstverwerken,
+                       e-mails versturen en internetten. De krachtige Core i5 processor gebruik je ook voor het bewerken 
+                       van beeldmateriaal voor in je presentatie. Ga je liever creatief aan de slag? Dan gebruik je
+                       het touchscreen zet je je wildste fantasieën op digitaal papier. Het Quad HD beeldscherm zorgt
+                       voor een scherpe weergave van teksten en video's, waardoor individuele pixels niet zichtbaar zijn. 
+                       De batterij gaat tot 13,5 uur mee zodat je niet continu vast zit aan het stopcontact.
+                    </div>
+                </div>
+                
+            </content>
+        </main>
+        <footer>
+            
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

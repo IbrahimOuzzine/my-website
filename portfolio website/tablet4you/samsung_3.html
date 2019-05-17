@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samsing Tablet</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+             <nav class="navigatie">
+                <ul class="nav nav-list">
+                    <li id="logo"><a href="home.html"><img src="home.jpg" alt="" id="logo"></a></li>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li ><a href="#">Producten</a></li>
+                    <li ><a href="#">Over ons</a></li>
+                    <li ><a href="#">Contact</a></li>
+                    <li class="winkelmand" >In Winkelmand: <span id="winkelmand"></span><div><a href="#" class="empty-basket" onclick="clearBasket()">Leeg mand</div></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="broodkruimel"><a href="index.html">Home</a> / Samsing</div>
+        <main>
+            <content>
+                <h2>Samsing Tablet</h2>
+            </content>
+            <content >
+                <div class="product-detail">
+                    <img src="img/samsung zwart 7.jpg" alt="Een tablet van het merk Samsing">
+                    <div class="bestel-tablet">
+                        <span class="Prijs"> 399,-</span> 
+                        <button class="zet-in-winkelmand" onclick="orderProduct()">In winkelmand</button>
+                    </div>
+                </div>
+                
+                <div class="product-description-detail">
+                    <table class="product-table">
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.1 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>16GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 2 GB</td>
+                        </tr>
+                   
+                    </table>
+                    <div class="product-description">
+                       Voor je dagelijkse dosis digitale entertainment grijp je naar de de Samsung Galaxy Tab A 10,1. 
+                       Zet thuis je favoriete series en games op de tablet en vermaak jezelf onderweg naar kantoor of 
+                       de collegezaal. Eenmaal aangekomen houd je eenvoudig je aantekeningen bij met een handige app. 
+                       Aan het einde van de dag check je nog even de tv gids voordat je op de bank in slaap valt.
+                    </div>
+                </div>
+                
+            </content>
+        </main>
+        <footer>
+            
+        </footer>
+        
+        <script type="text/javascript" >
+            function orderProduct(){
+                var productAantal = sessionStorage.getItem('productAantal');
+                if(productAantal== null){
+                    productAantal = 0;
+                }
+                
+                productAantal = parseInt(productAantal) + 1;
+                sessionStorage.setItem('productAantal',  productAantal);
+                console.log(productAantal);
+                document.getElementById('winkelmand').innerHTML = productAantal;
+               
+                
+            }
+            
+            function clearBasket(){
+                sessionStorage.removeItem('productAantal');
+                document.getElementById('winkelmand').innerHTML = 0;
+            }
+        </script>
+    </body>
+</html>

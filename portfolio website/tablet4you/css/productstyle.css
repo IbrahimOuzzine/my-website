@@ -1,0 +1,171 @@
+body{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
+ 
+margin: 0;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+  overflow-x: hidden;
+  overflow-y: visible;
+    
+   
+  font-family: 'Montserrat', sans-serif;
+;
+    
+    
+    
+   
+    
+    
+}
+
+
+.navbar{
+    
+   padding: 20px;
+    opacity: 0.9;
+    position: fixed !important;
+    width: 100%;
+    background-color: #21D4FD;
+    background-image: linear-gradient(90deg, #21D4FD 0%, #B721FF 100%);
+    top: 0;
+
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+    
+
+}
+
+
+footer{
+    padding: 15px;
+    background-color: #d7dbdb;
+    position: fixed;
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    text-align: center;
+    background-color: #21D4FD;
+    background-image: linear-gradient(267deg, #21D4FD 0%, #B721FF 100%);
+    
+   
+
+}
+.product{
+    
+
+    
+    
+  width: 50%;
+  color: white;
+  overflow: hidden;
+
+ 
+  margin-left: 500px;
+    
+
+
+  
+ margin-bottom: 70px;
+
+
+ margin-top: 125px;
+ 
+  
+
+  
+  
+}
+
+.filter_all{
+ 
+    color: white;
+    position: fixed;
+  
+   
+  
+    list-style: none;
+    
+
+    font-size: 18px;
+    margin-left: 10px;
+    position: fixed !important;
+    padding-left: 20px;
+    top: 5;
+}
+.filter_all h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.product img{
+   
+    max-width: 30%;
+    max-height: 30%;
+    display: inline-block;
+}
+.product h1{
+
+    display: inline;
+    position: absolute;
+    padding: 1%;
+    margin-bottom: 0px;
+    margin-top: 40px;
+   
+    font-size: 18px;
+
+    
+
+}
+.product p{
+    margin-top: 0px;
+    display: inline;
+    position: absolute;
+    padding: 1%;
+    margin-bottom: 0px;
+    margin-top: 90px;
+    color: #ffffff;
+
+    font-size: 18px;
+
+    
+
+   
+    font-size: 18px;
+}
+
+.row{
+    margin: 0px;
+}
+.header-info{
+    display: inline-block;
+    
+}
+.btn{
+margin-left: 450px;
+ 
+background-color: transparent;
+  
+border: 1px solid white;
+font-size: 25px;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid white;
+}
+
+.filter{
+    padding: 1px;
+}
+
+

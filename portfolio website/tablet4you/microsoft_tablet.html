@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Microsoft tablet</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/productenindeling.css">
+    </head>
+    <body>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="index.html">Tablet4You</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="producten.html">Producten <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="over_ons.html">Over ons</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                           
+                          </ul>
+                        </div>
+                      </nav>
+             
+                   
+       
+           
+        </header>
+       
+        <main>
+         <div class="container">
+             
+               
+              
+                <div class="product-detail">
+                        <h2 class="p2">Microsoft surface pro </h2>
+                    
+                    <img id="myImg" src="img/microsoft.png" alt="Microsoft" style="width:100%;max-width:300px">
+                    
+
+                    <div class="bestel-tablet">
+                        <span class="Prijs"> € 949,-</span> <br>
+
+                        <a href="https://www.mediamarkt.nl/nl/product/_apple-ipad-2018-32gb-wifi-spacegrijs-1567749.html"><button type="button" class="btn btn-primary btn-lg">bestellen</button></a>
+                    </div>
+                </div>
+                
+    
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                
+                
+                <div class="product-description-detail">
+                    <table class="product-table">
+                        <tr>
+                            <th>Schermdiagonaal</th>
+                            <td>10.1 inch</td>
+                        </tr>
+                        <tr>
+                            <th>Besturingssysteem</th>
+                            <td>Windows 10</td>
+                        </tr>
+                        <tr>
+                            <th>Draadloze verbinding</th>
+                            <td>Bluethooth Wifi</td>
+                        </tr>
+                        <tr>
+                            <th>Opslagcapaciteit</th>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr>
+                            <th>RAM-geheugen</th>
+                            <td> 8 GB</td>
+                        </tr>
+                        <tr>
+                            <th>Kleur</th>
+                            <td>Grijs</td>
+                        </tr>
+                        
+                   
+                    </table>
+                    <div class="product-description">
+                        <h1>Productomschrijving</h1>
+                      <p> 
+                        Ga voor de Microsoft Surface Pro als je niet wil kiezen tussen een laptop en een tablet. Wanneer je dit model met de bijbehorende type cover aanschaft, heb je een 2-in-1 voor tekstverwerken, e-mails versturen en internetten. De krachtige Core i5 processor gebruik je ook voor het bewerken van beeldmateriaal voor in je presentatie. Ga je liever creatief aan de slag? Dan gebruik je het touchscreen zet je je wildste fantasieën op digitaal papier. Het Quad HD beeldscherm zorgt voor een scherpe weergave van teksten en video's, waardoor individuele pixels niet zichtbaar zijn. De batterij gaat tot 13,5 uur mee zodat je niet continu vast zit aan het stopcontact.
+                    </p>
+                    </div>
+                </div>
+            </div>
+                
+        
+        </main>
+        <footer>
+            @ibrahim Ouzzine
+            
+        </footer>
+        
+        <script type="text/javascript" >
+       
+
+                // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    </body>
+</html>
