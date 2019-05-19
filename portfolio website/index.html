@@ -16,12 +16,12 @@
 
 
 
-    <div class="viewport-1">
+    <div class="viewport-1" id="section1">
         <nav>
-            <a href="" class="">Home</a>
-            <a href="" class="">About</a>
-            <a href="" class="">My work</a>
-            <a href="" class="">Contact</a>
+            <a href="" class="" >Home</a>
+            <a href="#section2" class="" >About</a>
+            <a href="#section3" class="">Skills</a>
+            <a href="#section4" class="">My Work</a>
             <a href="">Skills</a>
 
         </nav>
@@ -37,14 +37,14 @@
 
         </div>
     </div>
-    <div class="viewport-2">
+    <div class="viewport-2" id="section2">
         <h1 class="about-me-title">About</h1>
         <div class="section-2-text">
 
             <div class="container">
                 <div class="flex">
                     <h1>About me</h1>
-                    <p class="section-p">My name is Ibrahim Ouzzine i am 19 years old and i am a first year at Roc van
+                    <p>My name is Ibrahim Ouzzine i am 19 years old and i am a first year at Roc van
                         Amstelland College
                         my passion has always been programming i love to create things from scratch and get on new
                         challenges.
@@ -57,9 +57,9 @@
                 <div class="flex">
 
                     <h1>What do i do? </h1>
-                    <p class="section-p">Im a front-end developer and looking too learn more. i have a lot of dedication
+                    <p>Im a front-end developer and looking too learn more. i have a lot of dedication
                         and motivation. I will always try my best to achieve my goals. im also experimenting with other
-                        languages like c# and python.
+                        languages like c# and python. and i always open to learn new things.
 
                     </p>
                 </div>
@@ -71,13 +71,13 @@
     </div>
 
 
-    <div class="viewport-3">
+    <div class="viewport-3" id="section3">
         <div class="section-3-text">
             <h1>Skills</h1>
 
             <div class="container">
                 <div class="flex">
-                    <div onclick="modalBtnFront()" class="card ">
+                    <div onclick="modalBtnFront()" class="card animated infinite pulse">
                         <h3>Front-end</h3>
                         <p>Html</p>
                         <p>Css</p>
@@ -87,11 +87,10 @@
 
                         <!-- Modal content -->
                         <div class="modal-content animated bounceInUp">
-                            <span class="close" onclick="closeModal()">&times;</span>
+                             <span class="close " onclick="closeModal()">&times; </span>
                             <h1>Front-end </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum repudiandae
-                                minima voluptate sint enim soluta labore, reiciendis eaque aut, repellat aspernatur
-                                placeat vitae ipsa ullam nemo est quibusdam fugit.</p>
+                            <p>I create responsive websites that allow the user to experience your website in the best
+                                and most appropriate way suited to the device they are using.</p>
                         </div>
 
                     </div>
@@ -100,7 +99,7 @@
                 </div>
                 <div class="flex">
 
-                    <div onclick="modalBtnBack()" class="card">
+                    <div onclick="modalBtnBack()" class="card animated infinite pulse ">
                         <h3>Back-end</h3>
                         <p>PHP</p>
                         <p>(basic) Python</p>
@@ -114,17 +113,17 @@
                     <div class="modal-content animated bounceInUp">
                         <span class="close" onclick="closeModal()">&times;</span>
                         <h1>back-end </h1>
-                        <p>Lorem ipsum doasdasdasdasdasdasdlor sit amet consectetur adipisicing elit. Accusantium eum
-                            repudiandae
-                            minima voluptate sint enim soluta labore, reiciendis eaque aut, repellat aspernatur
-                            placeat vitae ipsa ullam nemo est quibusdam fugit. Csss</p>
+                        <p>My back-end skills are still in progress but i can already work with the database and can
+                            make simple log in functions and create simple dashboard
+                            i also work with Python i am currently improving my skills to get better at it.
+                        </p>
                     </div>
 
                 </div>
 
                 <div class="flex">
 
-                    <div onclick="modalBtnFrame()" class="card">
+                    <div onclick="modalBtnFrame()" class="card animated infinite pulse ">
                         <h3>Frameworks</h3>
                         <p>Bootstrap</p>
                         <p>MaterilizedCss</p>
@@ -137,10 +136,8 @@
                     <div class="modal-content animated bounceInUp">
                         <span class="close" onclick="closeModal()">&times;</span>
                         <h1>Framework </h1>
-                        <p>Lorem ipsum doasdasdasdasdasdasdlor sit amet consectetur adipisicing elit. Accusantium eum
-                            repudiandae
-                            minima voluptate sint enim soluta labore, reiciendis eaque aut, repellat aspernatur
-                            placeat vitae ipsa ullam nemo est quibusdam fugit. Csss</p>
+                        <p>I can work with any framework. they are simple to use and i can create very nice websites
+                            with because of the power it has. </p>
                     </div>
 
                 </div>
@@ -150,7 +147,7 @@
         </div>
 
     </div>
-    <div class="viewport-4">
+    <div class="viewport-4" id="section4">
         <div class="section-4-text">
             <h1>
                 My work</h1>
@@ -168,8 +165,10 @@
                         <p>School project</p>
                         <div class="img-projects">
 
-                            <a href="https://github.com/IbrahimOuzzine/my-website/tree/master/portfolio%20website/website">
-                                <img class="test" src="img/github-logo.png" alt="" width="10%">
+                            <a
+                                href="https://github.com/IbrahimOuzzine/my-website/tree/master/portfolio%20website/easy-drive">
+                                <img class="test animated infinite heartBeat" src="img/github-logo.png" alt=""
+                                    width="10%">
                             </a>
 
 
@@ -193,11 +192,12 @@
     </div>
     <div class="viewport-5">
         <div class="section-5-text">
+          <a href="#section1"><img src="img/arrowIcon.png" alt="" width="4%" class="animated infinite bounce"></a>  
             <h1>Contact</h1>
             <form method="post" action="mailto:ouzzinei@hotmail.com">
 
 
-                <input type="submit" value="Lets talk" />
+                <input type="submit" value="Lets talk" class="animated infinite pulse" />
 
             </form>
 
